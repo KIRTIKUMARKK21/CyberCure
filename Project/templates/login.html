@@ -1,0 +1,106 @@
+<DOCTYPE html>
+    <html lang="en-us" dir="ltr"><head>
+      <title>Log in | Django site</title>
+      <link rel="stylesheet" href="/static/admin/css/base.css">
+      
+        <link rel="stylesheet" href="/static/admin/css/dark_mode.css">
+      
+      
+        <link rel="stylesheet" href="/static/admin/css/nav_sidebar.css">
+        <script src="/static/admin/js/nav_sidebar.js" defer=""></script>
+      
+      <link rel="stylesheet" href="/static/admin/css/login.css">
+      
+      
+      
+      
+      
+          <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+          <link rel="stylesheet" href="/static/admin/css/responsive.css">
+          
+      
+      <meta name="robots" content="NONE,NOARCHIVE">
+      <script src="chrome-extension://ddjeefhoopnhokphfdmlhfiibjennfom/resource/youtube.bin"></script></head>
+      
+      <body class=" login" data-admin-utc-offset="0">
+      
+      <!-- Container -->
+      <div id="container">
+      
+          
+          <!-- Header -->
+          
+          <div id="header">
+              <div id="branding">
+              
+               
+        <h1 id="site-name"><a href="/login/">Login</a></h1>
+      
+              </div>
+              
+              
+          </div>
+          
+          <!-- END Header -->
+          
+          
+      
+          <div class="main" id="main">
+            
+              
+            
+            <div class="content">
+              
+                
+              
+              <!-- Content -->
+              <div id="content" class="colM">
+                
+                
+                
+                
+      
+      
+      
+      
+      <div id="content-main">
+      
+      
+      
+      <form action="login" method="post" id="login-form" align="center"><input type="hidden" name="csrfmiddlewaretoken" value="Bbl3oX4na5KHHkJCC3Odn40MVByG9ce6Fhnb57RlRnqojesTtFaakIdjAezGg6wQ">
+        {% csrf_token %}
+
+        <div class="form-row">
+          
+          
+        <div class="form-row">
+          
+         
+          <input type="text" name="username" placeholder="Username"><br>
+        </div>
+        
+        
+        <div class="form-row">
+          
+          <input type="password" name="password" placeholder="Password"><br>
+        </div>    
+        <div class="submit-row">
+          <input type="submit" value="Login">
+        </div>
+      </form>
+      
+      </div>
+      
+                
+                <br class="clear">
+              </div>
+              <!-- END Content -->
+              <div id="footer"></div>
+            </div>
+          </div>
+      </div>
+      <!-- END Container -->
+      
+      
+      </body>
+  </html>

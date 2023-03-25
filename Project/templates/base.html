@@ -1,15 +1,91 @@
-<!DOCTYPE html>
+{% load static %}
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CyberCure</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body bgcolor ="red">
-	{% block content %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {% endblock %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title> {% block title %}{% endblock title %} | Cybercure</title>
+  </head>
+  <body>
+    <!--Import Navbars here-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">CyberCure</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              CyberSecurity
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/services">Features</a>
+              <a class="dropdown-item" href="#">IDS</a>
+              <a class="dropdown-item" href="#">Image Forgery Detection</a>
+              <a class="dropdown-item" href="#">Malware Detection</a>
+              <a class="dropdown-item" href="#">Image Encryption</a>
+             
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.security.org/how-secure-is-my-password/">Password taster</a>
+          </li>
+         
+        </ul>
+       
+        {% if user.is_authenticated %}
+        <li> Hello,{{user.first_name}} </li>
+        <li> <a href="{% url 'logout' %}">Logout</a></li>
+        {% else %}
+        <li> <a href="{% url 'register' %}">Register</a></li> 
+       
+        <li> <a href="{% url 'login' %}">Login</a></li>
+        {% endif %}
+      </div>
+    </nav>
+
+    {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %} 
+</ul>
+{% endif %}
+
+
+{% if messages %}
+{% for message in messages %}
+    <div class="alert aler-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+      {{ message }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+
+    {% block body %}
+    {% endblock body %}
+    
+  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
