@@ -29,30 +29,33 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              CyberSecurity
+              Features
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/services">Features</a>
-              <a class="dropdown-item" href="#">IDS</a>
-              <a class="dropdown-item" href="#">Image Forgery Detection</a>
+              <!-- <a class="dropdown-item" href="/services">Features</a> -->
+              <a class="dropdown-item" href="http://localhost:8501">IDS</a>
+              <a class="dropdown-item" href="http://localhost:8502">Image Forgery Detection</a>
               <a class="dropdown-item" href="#">Malware Detection</a>
               <a class="dropdown-item" href="#">Image Encryption</a>
              
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.security.org/how-secure-is-my-password/">Password taster</a>
+            <a class="nav-link" href="https://www.security.org/how-secure-is-my-password/">Password Tester</a>
           </li>
          
         </ul>
        
         {% if user.is_authenticated %}
+        <ul>
         <li> Hello,{{user.first_name}} </li>
         <li> <a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
         {% else %}
+        <ul>
         <li> <a href="{% url 'register' %}">Register</a></li> 
-       
         <li> <a href="{% url 'login' %}">Login</a></li>
+        </ul>
         {% endif %}
       </div>
     </nav>
