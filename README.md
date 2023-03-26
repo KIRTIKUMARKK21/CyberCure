@@ -13,7 +13,7 @@ Introduction:
 
 Video Link
 ==========
-<a href="https://youtu.be/dQw4w9WgXcQ">https://youtu.be/dQw4w9WgXcQ</a>
+<a href="https://youtu.be/6L-DbOeKrp8.">Video link</a>
 
 Presentation Link
 ==================
