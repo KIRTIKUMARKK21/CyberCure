@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 from keras.models import load_model
 import tensorflow
-from streamlit_option_menu import option_menu
+# from streamlit_option_menu import option_menu
 from sklearn.preprocessing import LabelEncoder
 from tensorflow import keras
 
@@ -38,8 +38,8 @@ url = "https://github.com/ahlashkari/CICFlowMeter"
 st.write("Get CSV file from Network traffic flow generator Genereated By CICFlowMeter [link]({url})".format(url=url))
 
 
-from selenium import webdriver
-from bs4 import BeautifulSoup
+# from selenium import webdriver
+# from bs4 import BeautifulSoup
 
 # def get_data(search_input):
 #     search_input = search_input.replace(" ","+")
