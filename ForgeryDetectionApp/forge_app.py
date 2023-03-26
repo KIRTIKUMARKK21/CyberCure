@@ -689,6 +689,8 @@ model_v1 = pre_trained_model(weight_path=r'C:\Users\juutk\OneDrive\Documents\hac
 # check_forgery(model_v1,img_path=r'C:\Users\juutk\OneDrive\Documents\hack36\fake-img.jpg',device=device)
 
 import streamlit as st
+with open("style.css") as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 def predict(model, img, device=device):
 
@@ -753,7 +755,7 @@ def load_model():
     return model 
 model = load_model()
 st.write("""
-Image Manipulation Detection
+# Image Manipulation Detection
 """)
 file = st.file_uploader("Please upload an image", type=["jpg", "png", "jpeg"])
 import cv2

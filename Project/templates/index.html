@@ -20,11 +20,11 @@ Home
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden"></span>
         </button>
       </div>
     </div>
@@ -41,11 +41,41 @@ Home
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">CyberCure</h1>
-        <p class="lead text-muted">An Open source Machine Learning based website where users will be able to preserve their Computer from Cyber Crime
-          </p>
         <p>
-          
+        <div class="type-container">
+          <h1>CyberCure <span class="protect">protects</span> against <span class="auto-type"></span></h1>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+        <script>
+          var typed = new Typed('.auto-type', {
+            strings: ["intrusion!", "image forgery!", "malware!"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+          });
+        </script>
+        <style>
+          .type-container {
+            width: 90%;
+            margin: auto;
+          }
+
+          .type-container span:nth-child(1) {
+            color: green;
+          }
+
+          .type-container span:nth-child(2) {
+            color: #d90429;
+          }
+        </style>      
+        <br>
+        <br>
+        <br>
+        <h1 class="fw-light">CyberCure</h1>
+        <p class="lead text-muted">
+          An open source solution for your cyber security related problems.
+        </p>
         </p>
       </div>
     </div>
