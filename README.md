@@ -17,7 +17,7 @@ Video Link
 
 Presentation Link
 ==================
-  <a href="https://www.canva.com/design/DAE-vBgoxx8/D_WtWUa2ql_xA30zdbB_RQ/view?utm_content=DAE-vBgoxx8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> PPT link here </a>
+  <a href="https://www.canva.com/design/DAFeQYxdmqM/mRGcIsNpc3_KWYTkM_PAnw/edit?utm_content=DAFeQYxdmqM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> PPT link here </a>
 
 Table of Contents:
 ==================
