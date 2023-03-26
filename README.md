@@ -53,11 +53,12 @@ See the section about deployment for more information.
 Technology Stack:
 =================
 
-1)Python
-2)Django
-3)Streamlit
-4)Pytorch
-5)Tensorflow
+1)Python <br>
+2)Django <br>
+3)Streamlit <br>
+4)Pytorch <br>
+5)Tensorflow <br>
+6)Scikit-learn <br>
 
 Contributors
 ============
