@@ -64,10 +64,13 @@ Contributors
 ============
 
 Team Name: 36GhanteKarege
-* [Kirti Kumar](https://github.com/KIRTIKUMARKK21)
-* [Utkarsh Jha](https://github.com/utkarsh1236)
-* [Akshat Verma](https://github.com/akshatvermavi)
-* [Yash Nayak](https://github.com/nayak-yash)
+
+ | Name                           |              Email ID                 |          Branch          |     github                      |  
+ |--------------------------------|---------------------------------------|--------------------------|-------------------------------  |
+ | **Kirti Kumar**                |     kirtikumarkk21@gmail.com          |            CSE           |https://github.com/KIRTIKUMARKK21| 
+ | **Akshat verma**               |       akshatvermanike@gmail.com       |            ME            | https://github.com/akshatvermavi|
+ | **Utkarsh Jha**                |     ju.utkarshjha@gmail.com           |            CSE           | https://github.com/utkarsh1236  |
+ | **Yash Nayak**                 |       yashn628@gmail.com              |            CSE           |    https://github.com/nayak-yash|          
 
 ### Made at
 <a href="https://hack36.com"> <img src="https://cutt.ly/BuiltAtHack36" height=24px> </a>
