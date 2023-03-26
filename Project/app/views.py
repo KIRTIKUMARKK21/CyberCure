@@ -11,3 +11,6 @@ def add(request):
     val2 = int(request.POST["num2"])
     res = val1 + val2
     return render(request, "result.html", {'result' :res})
+
+#def about(request):
+    #return render(request,'about.html')

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+{% block body %}
+{% load crispy_forms_tags %}
+
+    <div class="container my-3"> 
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://thumbs.dreamstime.com/b/hand-touching-cybersecurity-button-cybercrime-inscription-concept-178726093.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://thumbs.dreamstime.com/b/hand-touching-cybersecurity-button-cybercrime-inscription-concept-178726093.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://thumbs.dreamstime.com/b/hand-touching-cybersecurity-button-cybercrime-inscription-concept-178726093.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div> 
+
+      
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">CyberCure</h1>
+        <p class="lead text-muted">An Open source Machine Learning based website where users will be able to preserve their Computer from Cyber Crime
+          </p>
+        <p>
+          
+        </p>
+      </div>
+    </div>
+  </section>
+
+      
+    </form>
+  </div>
+  </div>
+  <br><br><br>
+
+
+
+</main>
+
+{% endblock body %}
