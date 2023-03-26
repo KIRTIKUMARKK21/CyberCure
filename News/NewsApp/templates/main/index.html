@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'NewsApp/style.css' %}">
+<!-- Optional theme -->
+  </head>
+  <body>
+    <div class="jumbotron" style="color:black">
+  
+      <h1>
+   Get the latest news on our website
+      </h1>
+  
+    </div>
+  
+  
+    <div class="container">
+      {% for new, des, i in mylist %}
+            <div class="block">
+              <div class="text-block">
+              <strong>{{ new }}</strong><br>
+              {% comment %} {{ value|linebreaks }} {% endcomment %}
+              {{ des }}
+              {% comment %} {{ value|linebreaks }} {% endcomment %}
+              {% comment %} <hr syle="width:10px;"> {% endcomment %}
+              </div>
+              <div class="image-block">
+                <img src="{{ i }}" alt="">
+              </div>
+            </div>
+      {% endfor %}
+    </div>
+  
+  </body>
+</html>
